@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsFlex - Customize Your Newsletter</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="text-center">
+    <div class="container">
+      <h1>Welcome to NewsFlex</h1>
+      <p class="lead">Log in and choose your newsletter preferences.</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+
+    <div class="card p-4">
+      <h2 class="mb-4 text-center">Login to <span>NewsFlex</span></h2>
+      <form id="combinedForm">
+        
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group pass">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+          <p id="text">Your password must:</p>
+          <ul>
+            <li id="noSpace">No spaces.</li>
+            <li id="8char">At least 8 characters long.</li>
+            <li id="oneUppr">Includes at least one uppercase letter.</li>
+            <li id="oneNum">Includes at least one number.</li>
+          </ul>
+        </div>
+
+        <div class="alert alert-info mt-4" id="recommendationBox">
+          <strong>Recommended Topic for You:</strong> <span id="recommendedTopic">Technology</span>
+        </div>
+
+        <h3 class="mt-4">Select Your Favorite Topics:</h3>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic1" name="topics" value="Technology">
+          <label class="form-check-label" for="topic1">Technology</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic2" name="topics" value="Business">
+          <label class="form-check-label" for="topic2">Business</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic3" name="topics" value="Health">
+          <label class="form-check-label" for="topic3">Health</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic4" name="topics" value="Entertainment">
+          <label class="form-check-label" for="topic4">Entertainment</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic5" name="topics" value="Science">
+          <label class="form-check-label" for="topic5">Science</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic6" name="topics" value="Sports">
+          <label class="form-check-label" for="topic6">Sports</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic7" name="topics" value="Travel">
+          <label class="form-check-label" for="topic7">Travel</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="topic8" name="topics" value="Politics">
+          <label class="form-check-label" for="topic8">Politics</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+
+      <div id="message" class="mt-3"></div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <p>&copy; 2024 NewsFlex. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
