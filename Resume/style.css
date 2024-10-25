@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+:root{
+    ---textColor: #fff;
+    ---recColor: #134f71;
+}
+
+.me{
+    margin: 0 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 55px;
+}
+.ellipse-div {
+    margin: 70px 0;
+    height: 350px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #6DB4CB;
+}
+.infos{
+    letter-spacing: 0.5em;
+    font-family: 'Source Serif Pro';
+    color: #000;
+    height: 160px;
+    margin: 0 20px;
+}
+.hi{
+    font-size: 30px;
+    line-height: 40px;
+    position: relative;
+    font-weight: 500;
+}
+.iam{
+    font-size: 60px;
+    line-height: 50px;
+    position: relative;
+    font-weight: 300;
+}
+.manem{
+    font-size: 120px;
+    letter-spacing: 0.1em;
+    font-family: 'Alfa Slab One';
+    color: #094659;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 0 0 var(---textColor), 0 2px 0 var(---textColor), -2px 0 0 var(---textColor), 0 -2px 0 var(---textColor);
+    position: absolute;
+    
+}
+.rectangle-container{
+    margin:10px 90px;
+}
+.rec1{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: var(---recColor);
+}
+.rec2{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    margin:100px 0;
+    position: absolute;
+    background-color: var(---recColor);
+}
+.rec3{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    margin: 200px 0;
+    position: absolute;
+    background-color: var(---recColor);
+}
+.yr-container{
+    position: absolute;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 10px 125px;
+    div{
+        line-height: 35px;
+    }
+}
+.yr-level{
+    font-size: 30px;
+    color: var(---textColor);
+    font-family: Roboto;
+    line-height: 30px;
+}
+.subjects{
+    font-size: 23px;
+    color: #000;
+    font-family: Karma;
+}
+.year-sec{
+    height: 70px;
+    width: 280px;
+    position: absolute;
+    margin: 25px 230px;
+    background-color: #482009;
+    padding: 0.3rem;
+}
+.year-sec p{
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    font-family: Kadwa;
+    color: var(---textColor);
+    text-align: center;
+}
+.lower-part{
+    margin: 120px 30px;
+}
+.vline{
+    position: absolute;
+    height: 150px;
+    width: 0.1rem;
+    background-color: #000;
+    margin: 20px 120px;
+}
+.icons{
+    margin: 50px 150px;
+    position: absolute;
+}
+#icon1{    
+    font-size: 30px;
+    position: absolute;
+}
+#icon2{    
+    font-size: 30px;
+    position: absolute;
+    margin-top: 60px;
+}
+.info-container{
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    font-family: 'Song Myung';
+    width: 50%;
+    margin: 50px 200px;
+}
+.contact{
+    margin: 0;
+    position: absolute;
+}
+.address{
+    margin: 60px 0;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .col-3{
+        position: absolute;
+    }
+    .hi{
+        line-height: 40px;
+        margin: 10px 270px;
+        font-size: 28px;
+    }
+    .iam{
+        width: 70%;
+        font-size: 42px;
+        margin: 0 270px;
+    }
+    .manem{
+        width: 400px;
+        margin: 250px 0;
+        font-size: 55px;
+    }
+   .year-sec{
+        width: 250px;
+        height: 70px;
+        margin: 340px 90px;
+    }
+    .year-sec p{
+        font-size: 35px;
+    }
+    .rectangle-container{
+        margin: auto;
+        position: absolute;
+    }
+    .rec1{
+        margin: 450px 30px;
+        height: 50px;
+        width: 150px;
+        border-radius: 30px;
+    }
+    .rec2{
+        margin: 450px 250px;
+        height: 50px;
+        width: 150px;
+        border-radius: 100px;
+    }
+    .rec3{
+        margin: 550px 140px;
+        height: 50px;
+        width: 150px;
+        border-radius: 30px;
+    }
+    .yr-container{
+        margin: auto;
+    }
+    .yr-level{
+        width: 120px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .subjects{
+        font-size: 20px;
+    }
+    .yr1{
+        margin: 460px 50px;
+        position: absolute;
+    }
+    .yr2{
+        margin: 460px 270px;
+        position: absolute;
+    }
+    .yr3{
+        margin: 560px 160px;
+        position: absolute;
+    }
+    .lower-part{
+        margin: 90px 0;
+    }
+    .vline{
+        position: absolute;
+        margin: 550px 0;
+        height: 140px;
+        width: 430px;
+        background-color: #0F82A7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icons{
+        margin: auto;
+    }
+    #icon1{
+        font-size: 35px;
+        margin: 570px 20px;
+    }
+    #icon2{
+        font-size: 35px;
+        margin: 630px 20px;
+    }
+    .info-container{
+        margin: auto;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .contact{
+        margin: 570px 70px;
+    }
+    .address{
+        margin: 630px 70px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) 
+{
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .hi{
+        line-height: 40px;
+        margin: 10px 180px;
+        font-size: 30px;
+    }
+    .iam{
+        width: 200px;
+        font-size: 45px;
+        margin: 0 180px;
+    }
+    .manem{
+        margin: 20px 180px;
+        width: 600px;
+        font-size: 80px;
+    }
+    .year-sec{
+        margin: 0 290px;
+    }
+    .lower-part{
+        margin: 70px 110px;
+    }
+  } 
